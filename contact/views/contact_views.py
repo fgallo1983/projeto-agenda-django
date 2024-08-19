@@ -4,7 +4,7 @@ from contact.models import Contact
 
 
 def index(request):
-    contacts = Contact.objects.all()
+    contacts = Contact.objects.filter(show=True).order_by('-id')[:20]
 
     context = {
         'contacts': contacts,
@@ -14,4 +14,4 @@ def index(request):
         request,
         'contact/index.html',
         context
-    )   
+    )
