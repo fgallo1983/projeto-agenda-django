@@ -7,6 +7,9 @@ db.sqlite3
 static/
 media/
 project/local_settings.py
+guicorn.txt
+nginx-http.txt
+SERVER.md
 
 # Backup files #
 *.bak
